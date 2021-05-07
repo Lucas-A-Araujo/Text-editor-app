@@ -1,0 +1,104 @@
+body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.DraftEditor-root {
+    border: 1px solid rgb(150, 150, 150);
+    /* box-shadow: 500vh 500vh 500vh rgb(0, 0, 0); */
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    border: none;
+  }
+  div.DraftEditor-editorContainer,
+  div.public-DraftEditor-content {
+    height: 100%;
+  }
+
+  div.rdw-editor-main{
+    height: 78vh;
+  }
+
+
+.headerEditor{
+  margin-top: -8vh;
+  margin-left: -6vh;
+  width: 220vh;
+  height: 13vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.home_folder_icon{
+  height: 10vh;
+  width: 10vh;
+}
+
+.home_save_icon{
+  height: 10vh;
+  width: 10vh;
+  
+}
+
+.input_name{
+  padding: 5px 5px;
+  font-size: 32px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-bottom: rgb(31, 31, 31);
+
+  background: none;
+
+  color: #adadad;
+}
+
+.save_button{
+  margin-left: 120vh;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.style_name  span::before{
+  content: '';
+  position: absolute;
+  top: 12vh;
+  left: 10vh;
+  width: 400px;
+  height: 1px;
+  background: #000000;
+}
+
+.editor_main{
+  width: 190vh;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  ::-webkit-scrollbar-track:hover {
+    background: rgba(136, 136, 136, 0.5);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

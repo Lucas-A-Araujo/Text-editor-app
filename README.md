@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Text editor app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+<p align="center">Este projeto de um editor de textos simples</p>
 
-In the project directory, you can run:
+<img src="https://img.shields.io/static/v1?label=License&message=MIT&color=7159c1&style=for-the-badge&logo=ghost"/>
 
-### `yarn start`
+## Índice
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">
+ <a href="#Descrição">Descrição</a>
+ <a href="#Features">Features</a>
+ <a href="#Pré-requisitos">Pré-requisitos</a>
+ <a href="#Tecnologias">Tecnologias</a>
+ <a href="#autor">Autor</a>
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h4 align="center"> 
+	  Status: Em construção.
+</h4>
+<h4 align="center"> 
+	  Estágio: Alpha.
+</h4>
 
-### `yarn test`
+### Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [x] Cadastro de usuário
+- [x] Login
+- [x] Criação de novo documento
+- [x] Atualização de documentos
+- [x] Visualização de documentos do usuário na Home
+- [x] Editor de textos simples
+- [x] Adição de um nome aos documentos
+- [ ] Logout
+- [ ] Delete de usuário
+- [ ] Delete de Documentos
+- [ ] Adicionar foto de perfil
+- [ ] Adicionar thumbnail aos documentos
+- [ ] Escolha de ordem de documentos entre  data de alteração ou alfabética
+- [ ] Acesso a documentos de outros usuários caso tenha permissão
+- [ ] Informar ao usuários em caso de erro ou operação inválida
 
-### `yarn build`
+### Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Antes de começar, serão necessárias as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e [postgreSQL](https://www.postgresql.org/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Back e Front End
+<p>
+1. Clone este repositório
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Acesse as pastas backend e frontend
 
-### `yarn eject`
+3. Instale as dependências de ambas
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+</p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Rodando o Back End
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<p>
+1. Crie um database chamado "docEditorTests" com a senha "1234", se preferir altere as configurações no arquivo connecting.js na pasta databaseOperations
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Execute o comando "yarn createTable" para criar as tabelas
 
-## Learn More
+3. Por fim, execute o comando "yarn start"
+</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Rodando o Front End
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p>
+1. Execute o comando "yarn start", preferencialmente execute o backend primeiro
+</p>
 
-### Code Splitting
+### 🛠 Tecnologias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+As seguintes ferramentas foram usadas na construção do projeto:
 
-### Analyzing the Bundle Size
+- [Node.js](https://nodejs.org/en/)
+- [PostegreSQL](https://www.postgresql.org/)
+- [React](https://pt-br.reactjs.org/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Autor
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feito por Lucas Alves
+[Linkedin](https://www.linkedin.com/in/lucas-alves-476b281aa/)

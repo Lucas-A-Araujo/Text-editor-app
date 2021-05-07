@@ -1,0 +1,50 @@
+/* body{
+    overflow-y: auto;
+} */
+
+.all_docs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    margin-top: 1vh;
+    
+    list-style: none;
+    height: 90vh;
+    width: auto;
+    overflow-y: auto;
+    
+}
+
+.one_doc{
+    flex-direction: column;
+    height: 50%;
+    width: 25%;
+}
+
+.button_doc{
+    height: 90%;
+    width: 100%;
+    margin-top: 0vh;
+    margin-left: -5%;
+    background-color: rgba(45, 45, 45, 0.2);
+    border: none;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.button_doc:hover{
+    background-color: rgba(45, 45, 45, 0.5);
+    height: 91%;
+    width: 101%;
+}
+
+.folder_icon{
+    height: 60%;
+    width: 60%;
+}
+
+::-webkit-scrollbar-track {
+    background-color: none;
+}
