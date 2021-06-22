@@ -1,6 +1,6 @@
-import db from './connecting.js'
+import db from './connecting'
 
-async function createTables(){
+async function createTables(): Promise<void> {
 
   await db.query(`CREATE TABLE IF NOT EXISTS users(
    id serial PRIMARY KEY,

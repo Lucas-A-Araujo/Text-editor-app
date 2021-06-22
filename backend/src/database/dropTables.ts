@@ -1,6 +1,6 @@
-import db from './connecting.js'
+import db from './connecting'
 
-async function dropTables(){
+async function dropTables(): Promise<void>{
   await db.connect()
   await db.query(`DROP TABLE evento CASCADE`)
   await db.query(`DROP TABLE participante CASCADE`)

@@ -1,6 +1,6 @@
 import pg from 'pg'
 
-const client = new pg.Client({
+const client: any = new pg.Client({
   user: 'postgres',
   host: 'localhost',
   database: 'docEditorTests',

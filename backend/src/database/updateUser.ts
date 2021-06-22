@@ -1,7 +1,7 @@
-import db from './connecting.js'
-import getUsers from './getUser.js'
+import db from './connecting'
+import getUsers from './getUser'
 
-async function updateUser(newUser){
+async function updateUser(newUser: any): Promise<void>{
     try{
         await db.connect()
         
@@ -12,7 +12,7 @@ async function updateUser(newUser){
     finally{
         
         if(getUsers(newUser)){
-            const queryUpdateUser = "UPDATE users SET name=($1), email=($2), password=($3) WHERE (name=($4) OR email= ($5)) AND password=($6)"
+            const queryUpdateUser: string = "UPDATE users SET name=($1), email=($2), password=($3) WHERE (name=($4) OR email= ($5)) AND password=($6)"
             
             await db.query(queryUpdateUser, [newUser.newName, newUser.newEmail, newUser.newPassword, newUser.name, newUser.email, newUser.password])
       
